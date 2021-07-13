@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Desarrolladores MOC</title>
+    <link rel="shortcut icon" href="assets/images/palanca-de-mando.png" />
+    <link rel="stylesheet" href="assets/css/productos.css" />
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ml-auto" href="#">MC</a>
+            <div class="collapse navbar-collapse fle " id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 200px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Desarrollo Web
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Hola</a></li>
+                            <li><a class="dropdown-item" href="#">Hay que pensar en subcategorias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Desarrollo Movil
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Videojuegos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Desarrollo de Escritorio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            ¿Otra opcion?
+                        </a>
+                    </li>
+                </ul>
+    
+                <form class="d-flex flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success mr-2" type="submit">Search</button>
+                </form>
+    
+            </div>
+            <div class="nav-item ml-sm-auto">
+                <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#modalUsuario"
+                    data-whatever="@mdo">Iniciar Sesión</button>
+                <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Iniciar Sesión</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Crear Cuenta</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="email" class="col-form-label">Correo Electronico:</label>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="contraseña" class="col-form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" id="contraseña">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">INICIAR SESIÓN</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="email" class="col-form-label">Correo Electronico:</label>
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contraseña" class="col-form-label">Contraseña:</label>
+                                                    <input type="password" class="form-control" id="contraseña">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">CREAR CUENTA</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item dropdown dropleft">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Carrito
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="dropdown-menu" style="width: 350px">
+                    <h6 class="dropdown-header mb-1">Productos añadidos:</h6>
+                    <div class="container ml-1">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row mb-3 mt-2">
+                                    <div class="col-4 m">
+                                        <a href="">
+                                            <img src="https://oasify.com/wp-content/uploads/2020/11/910-005793-1.jpg" alt=""
+                                                style="width: 100px" />
+                                        </a>
+                                    </div>
+                                    <div class="col-8 mt-2">
+                                        <a class="font-weight-bolder text-black-50" href="">Titulo del producto</a>
+                                        <a class="font-weight-light" href="">Subtitulo</a><br />
+                                        <p class="font-weight-light float-left">X2</p>
+                                        <p class="font-weight-normal float-right mr-4">$5000</p>
+                                    </div>
+                                </div>
+                                <!-- ¿ <hr> ? -->
+                                <div class="row mb-3">
+                                    <div class="col-4">
+                                        <a href="">
+                                            <img src="https://oasify.com/wp-content/uploads/2020/11/910-005793-1.jpg" alt=""
+                                                style="width: 100px" />
+                                        </a>
+                                    </div>
+                                    <div class="col-8 mt-2">
+                                        <a class="font-weight-bolder text-black-50" href="">Titulo del producto</a>
+                                        <a class="font-weight-light" href="">Subtitulo</a><br />
+                                        <p class="font-weight-light float-left">X1</p>
+                                        <p class="font-weight-normal float-right mr-4">$5000</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="">
+                                            <img src="https://oasify.com/wp-content/uploads/2020/11/910-005793-1.jpg" alt=""
+                                                style="width: 100px" />
+                                        </a>
+                                    </div>
+                                    <div class="col-8 mt-2">
+                                        <a class="font-weight-bolder text-black-50" href="">Titulo del producto</a>
+                                        <a class="font-weight-light" href="">Subtitulo</a><br />
+                                        <p class="font-weight-light float-left">X1</p>
+                                        <p class="font-weight-normal float-right mr-4">$5000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item-text mb-1 mt-2">
+                        <p class="font-weight-bolder float-right mr-3">$6000</p>
+                        <p class="font-weight-light float-right mr-3">Total:</p>
+                    </div>
+                    <br />
+                    <div class="dropdown-divider"></div>
+                    <a type="submit" class="dropdown-item btn btn-primary text-center" href="#">Ir a mi carrito</a>
+                    <a type="submit" class="dropdown-item btn btn-primary text-center" href="#">Pagar ahora</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor1" style="width: 66%;">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height: 443px;">
+                    <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                        class="d-block w-100" alt="tengo amsiedad :,v">
+                </div>
+                <div class="carousel-item" style="height: 443px;">
+                    <img src="https://images.unsplash.com/photo-1459909633680-206dc5c67abb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                        class="d-block w-100" alt="tengo amsiedad :,v">
+                </div>
+                <div class="carousel-item" style="height: 443px;">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=840&q=80"
+                        class="d-block w-100" alt="tengo amsiedad :,v">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="contenedor3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                FULANITO DE TAL
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">PRECIOS</li>
+                <li class="list-group-item">SERVICIOS EXTRA</li>
+                <li class="list-group-item">METODO DE PAGO</li>
+            </ul>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                FULANITO DE TAL
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">PRECIOS</li>
+                <li class="list-group-item">SERVICIOS EXTRA</li>
+                <li class="list-group-item">METODO DE PAGO</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenedor2">
+        <a data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"><img
+                src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="" style="width: 180px;">
+        </a>
+        <a>
+            <img src="https://images.unsplash.com/photo-1459909633680-206dc5c67abb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                style="max-width: 180px;" data-target="#carouselExampleIndicators1" data-slide-to="1" />
+        </a>
+        <a>
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=840&q=80"
+                style="max-width: 180px;" data-target="#carouselExampleIndicators1" data-slide-to="2" />
+        </a>
+    </div>
+    <div class="contenedor4">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                style="width: 100%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner" style="text-align: center;">
+                    <div class="carousel-item active" style="width: auto; margin: auto;">
+                        <div class="card" style="width: 15rem; float:left;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card one1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem; float: left;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    
+                        <div class="card" style="width: 15rem; float: left;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem; float: left;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem; float: left;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card three3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card cuatro4</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two5</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two6</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two7</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="https://i.3djuegos.com/juegos/16689/deathloop/fotos/noticias/deathloop-5478621.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card two8</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only text-danger">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor5">
+        <p>Gracias Por Apoyar Lo Nacional</p>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
